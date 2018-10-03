@@ -5,8 +5,27 @@ body {
 	margin: 0;
 }
 
+/*
+body {
+	background: #ffc; color
+	text-align: center; Aparcen centrados horizontalmente
+	line-height: 100vh; Les dice respecto aque altura centrarse
+	vh => vireport height  es una unidad relativa de la media total
+	margin: 0; Para eliminar los margenes usamos 0
+}
+*/
+
+
 button {
 	vertical-align: middle;
 	width: 100px;
 	height: 400px;
 }
+
+/*
+button {
+	vertical-align: middle; Para que aparezcan centrados vertical, requiere que el elemento padre tenga line-height
+	width: 100px; Acada boton un ancho
+	height: 400px; Acada ancho
+}
+*/

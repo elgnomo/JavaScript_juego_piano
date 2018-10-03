@@ -2,19 +2,34 @@
 <html lang="es">
 
 <head>
+	<title>JavaScript Piano</title>
 	<meta charset="UTF-8">
-	<title>Piano - Aplicación 1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Practicas Javascript">
+	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+	<meta name="author" content="Efrain elGnomo">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-	<button>DO</button>
-	<button>RE</button>
-	<button>MI</button>
-	<button>FA</button>
-	<button>SOL</button>
-	<button>LA</button>
-	<button>SI</button>
+	<!-- <button id="btnDO">DO</button> -->
+	<button data-note="DO">DO</button>
+	<button data-note="RE">RE</button>
+	<button data-note="MI">MI</button>
+	<button data-note="FA">FA</button>
+	<button data-note="SOL">SOL</button>
+	<button data-note="LA">LA</button>
+	<button data-note="SI">SI</button>
+
+
+	<audio src="assets/DO.wav" id="audioDO"></audio>
+	<audio src="assets/RE.wav" id="audioRE"></audio>
+	<audio src="assets/MI.wav" id="audioMI"></audio>
+	<audio src="assets/FA.wav" id="audioFA"></audio>
+	<audio src="assets/SOL.wav" id="audioSOL"></audio>
+	<audio src="assets/LA.wav" id="audioLA"></audio>
+	<audio src="assets/SI.wav" id="audioSI"></audio>
 
 	<script src="js/app.js"></script>
 </body>
