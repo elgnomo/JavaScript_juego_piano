@@ -34,17 +34,40 @@
     *Si es para un solo elemeto esto es bueno pero no es optimo cuando se tiene varias opciones
 */
 
-var buttons = document.querySelectorAll('button');
-buttons.forEach(function (button) {
-    button.addEventListener('click', playSound);
-})
+
+/*
+    var buttons = document.querySelectorAll('button');
+
+    buttons.forEach(function (button) {
+        button.addEventListener('click', playSound);
+    })
+
+    function playSound(event) {
+        console.log(event.target); //Nos devuelven datos concretos
+        var button = event.target;
+        var note = button.dataset.note;
+        var audio = document.getElementById('audio' + note);
+        audio.pause();
+        audio.currentTime = 0;
+        audio.play();
+    };
+*/
+
+const BUTTONS = document.querySelectorAll('button');
+// BUTTONS.forEach(function (button) {
+//     button.addEventListener('click', playSound);
+// })
+//listado de botones
+BUTTONS.forEach(
+    button => button.addEventListener('click', playSound)
+);
 
 function playSound(event) {
-    console.log(event.target); //Nos devuelven datos concretos
-    var button = event.target;
-    var note = button.dataset.note;
-    var audio = document.getElementById('audio' + note);
-    audio.pause();
-    audio.currentTime = 0;
-    audio.play();
-};
+    const BUTTON = event.target;
+    const NOTE = BUTTON.dataset.note;
+    //const AUDIO = document.getElementById('audio' + NOTE);
+    const AUDIO = document.getElementById(`audio${NOTE}`);
+    AUDIO.pause();
+    AUDIO.currentTime = 0;
+    AUDIO.play();
+}
