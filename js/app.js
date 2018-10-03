@@ -71,3 +71,23 @@ function playSound(event) {
     AUDIO.currentTime = 0;
     AUDIO.play();
 }
+
+//keyup unitario soltamos
+//keydown unitario
+//keypress combinacion
+
+/*
+    document.addEventListener('keydown', function (event) {
+        const KEY = event.key;
+        const BUTTON = document.querySelector(`BUTTON[data-key="${KEY}"]`);
+        BUTTON.click(); //trigger generamos el click sobre el boton que invoca playSound
+    });
+*/
+
+document.addEventListener('keydown', event => {
+    const KEY = event.key;
+    const BUTTON = document.querySelector(`BUTTON[data-key="${KEY}"]`);
+    if (BUTTON) {
+        BUTTON.click();
+    }
+})
